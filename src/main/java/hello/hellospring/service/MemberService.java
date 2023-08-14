@@ -10,13 +10,11 @@ import javax.swing.text.html.Option;
 import java.util.List;
 import java.util.Optional;
 
-@Service
 public class MemberService {
 
     //private final MemoryMemberRepository memberRepository = new MemoryMemberRepository();
     private final MemberRepository memberRepository;
 
-    @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
